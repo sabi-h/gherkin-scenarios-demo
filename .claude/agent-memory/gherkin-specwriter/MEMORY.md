@@ -1,0 +1,2 @@
+- [Cucumber World pattern](project_world_pattern.md) — Step defs share Playwright state via this.page/this.browser; hooks in todo.steps.js
+- [Frontend selector conventions](project_selectors.md) — aria-label and CSS selector patterns used across step definitions
