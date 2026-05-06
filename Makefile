@@ -1,4 +1,4 @@
 .PHONY: check
 
 check:
-	npx cucumber-js --dry-run
+	npx cucumber-js
