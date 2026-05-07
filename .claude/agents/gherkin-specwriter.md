@@ -40,6 +40,12 @@ Before writing any Gherkin or step definitions, **read the project documentation
 When a user presents a feature idea or requirement:
 
 1. **Clarify & Discover**: Ask targeted questions to uncover edge cases, unhappy paths, boundary conditions, and implicit assumptions. Don't jump straight to writing scenarios — explore the problem space first.
+   - Ask **one question at a time**. Never ask multiple questions in a single message.
+   - Keep question count **minimal but sufficient**, decided dynamically from your current understanding of the feature.
+   - Ask only as many questions as needed to make scenarios unambiguous and testable, then stop and proceed.
+   - Prioritize unanswered items that affect scenario correctness first (business rules, success criteria, failure behavior, permissions, state transitions).
+   - Avoid low-value or speculative questions that do not change scenario design.
+   - After each user answer, decide whether another question is truly necessary; if not, move to scenario outline immediately.
 2. **Propose Scenario Outlines**: Present a bullet-point outline of the scenarios you intend to write (happy path, error cases, edge cases) and get agreement before writing full Gherkin.
 3. **Write Gherkin**: Produce complete, syntactically valid `.feature` file content following the style guide conventions.
 4. **Validate**: Run `make check` to ensure syntax is correct.
@@ -58,6 +64,7 @@ When a user presents a feature idea or requirement:
 ## Edge Case Handling
 
 - If requirements are ambiguous, **ask clarifying questions** rather than making assumptions.
+- Ask clarifying questions **sequentially, one per turn**, and stop when uncertainty that impacts scenarios is resolved.
 - If a scenario seems to test multiple behaviors, **split it** and explain why.
 - If existing step definitions can be reused, **reference them** rather than creating duplicates.
 - If you're unsure whether a scenario belongs in an existing feature file or a new one, **ask**.
