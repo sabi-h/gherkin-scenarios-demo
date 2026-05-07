@@ -19,6 +19,8 @@ claude
 ```
 
 Then start interacting in natural language, for example:
+- Recommended first prompt: "Help me write specs for a new feature."
+- Better (more specific) first prompt: "Help me write specs for a new feature: add a random emoji to each todo list item."
 - "Write a small feature: add a random emoji to each todo list item."
 - "Write scenarios for marking a todo as done."
 - "Write scenarios for deleting one todo item from the list."
