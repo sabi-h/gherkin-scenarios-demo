@@ -19,9 +19,9 @@ claude
 ```
 
 Then start interacting in natural language, for example:
-- "I want scenarios for password reset with expired-link behavior."
-- "Review `features/checkout.feature` and tighten the scenarios."
-- "Generate step definitions for these scenarios."
+- "Write a small feature: add a random emoji to each todo list item."
+- "Write scenarios for marking a todo as done."
+- "Write scenarios for deleting one todo item from the list."
 
 ## Validate scenarios (optional)
 
