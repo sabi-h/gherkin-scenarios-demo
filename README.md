@@ -25,6 +25,10 @@ Then start interacting in natural language, for example:
 - "Write scenarios for marking a todo as done."
 - "Write scenarios for deleting one todo item from the list."
 
+Example interaction:
+
+![Claude CLI gherkin-specwriter example](assets/spec-writing-screenshot.png)
+
 ## Validate scenarios (optional)
 
 Run all feature files with Cucumber:
